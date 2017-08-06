@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html leng="en">
+<head>
+  <link rel="stylesheet" href="css/bulma.css">
+  <title>xd</title>
+  </head>
+  <body>
 <script>
 <!--
 /*
@@ -6,23 +13,23 @@ Over 300+ free scripts!
 This credit MUST stay intact for use
 */
 
-//specify random links below. You can have as many as you want
-var randomlinks=new Array()
 
-randomlinks[0]="http://freewarejava.com"
-randomlinks[1]="http://javascriptkit.com"
-randomlinks[2]="http://dynamicdrive.com"
-randomlinks[3]="http://cnn.com"
-randomlinks[4]="http://www.geocities.com"
+var dservers=new Array()
+
+dservers[0]="http://freewarejava.com"
+dservers[1]="http://javascriptkit.com"
+dservers[2]="http://dynamicdrive.com"
+dservers[3]="http://cnn.com"
+dservers[4]="http://www.geocities.com"
 
 function randomlink(){
-window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+window.location=dservers[Math.floor(Math.random()*dservers.length)]
 }
-//-->
+
 </script>
 <form method="post">
-<p><input type="button" name="B1" value="Random Link >>" onclick="randomlink()"></p> </form>
-
-<!--Uncomment below to use a regular text link instead
-<a href="javascript:randomlink()">Random Link</a>
--->
+<a class="button" onclick="randomlink"></a>
+ </form>
+ </body>
+ </html>
+ 
